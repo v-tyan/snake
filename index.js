@@ -29,8 +29,8 @@ let snake = [
 ]
 
 window.addEventListener("keydown", changeDirectionKey)
-document.addEventListener("touchstart", touchInit, false)
-document.addEventListener("touchmove", changeDirectionTouch, false)
+document.addEventListener("touchstart", touchInit, {passive:false})
+document.addEventListener("touchmove", changeDirectionTouch, {passive:false})
 resetBtn.addEventListener("click", resetGame)
 
 gameStart()
